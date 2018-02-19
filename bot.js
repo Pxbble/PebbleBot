@@ -109,7 +109,7 @@ bot.on("message", function(message) {
             if (message.guild.voiceConnection) message.guild.voiceConnection.disconnect
             break;
          default:
-         message.channel.sendMessage("Invaild command");
+         message.channel.sendMessage("That command does not exist! Put that in #command-request and Pebble will try to make it x3");
 
    }
 });

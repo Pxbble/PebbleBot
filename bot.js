@@ -107,11 +107,15 @@ bot.on("message", function(message) {
             server.queue.push(args[1]);
 
             if (message.guild.voiceConnection) message.guild.voiceConnection.disconnect
-        case "embed":
-            var embed = new Discord.RichEmbed()
-                       .addField("```<+>------------[- » 𝐏𝐞𝐛𝐁𝐨𝐭 « -]------------<+>```", "Test Description")
-            .setDescription("Test Embed");
-           message.channel.sendEmbed(embed);
+                case "help":
+        var embed = new Discord.RichEmbed()
+                .addField("<+>------------[- » 𝐏𝐞𝐛𝐁𝐨𝐭 « -]------------<+>")
+                .addField("𝐈𝐧𝐟𝐨 𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬")
+                .addField("» !version")
+                .addField("» !creator")
+                .setColor(bef9fb)
+                .setFooter("Enjoy and don't abuse!")
+            .setDescription("");
             break;
          default:
          message.channel.sendMessage("That command does not exist! Put that in #command-request and Pebble will try to make it x3");

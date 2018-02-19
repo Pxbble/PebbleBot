@@ -109,6 +109,7 @@ bot.on("message", function(message) {
             if (message.guild.voiceConnection) message.guild.voiceConnection.disconnect
         case "embed":
             var embed = new Discord.RichEmbed()
+                       .addField("```<+>------------[- » 𝐏𝐞𝐛𝐁𝐨𝐭 « -]------------<+>```", "Test Description")
             .setDescription("Test Embed");
            message.channel.sendEmbed(embed);
             break;

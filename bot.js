@@ -45,7 +45,7 @@ bot.on("message", function(message) {
 
   switch (args[0].toLowerCase()) {
     case "ping":
-      message.channel.sendMessage(message.author.toString() + "Pong!")
+      message.channel.sendMessage(message.author.toString() + ", Pong!")
       break;
      case "dick":
       message.channel.sendMessage("8=====D")
@@ -57,7 +57,7 @@ bot.on("message", function(message) {
       message.channel.sendMessage("```PebBot: Version 1.0.0```")
       break;
       case "creator":
-      message.channel.sendMessage(message.author.toString() + "**This bot has been created by a 12 year old kid named @_Pxbble_#9968**")
+      message.channel.sendMessage(message.author.toString() + "**, This bot has been created by a 12 year old kid named Pebble**")
       break;
       case "bangtankook":
       message.channel.sendMessage("**is a great friend!**")
@@ -65,9 +65,12 @@ bot.on("message", function(message) {
       case "pebble":    
       message.channel.sendMessage("**Developer and Creator of PebBot**")
       break;
+      case "ohreally":
+      message.channel.sendMessage("yes really")
+      break;
       case "8ball":
       if (args[1]) message.channel.sendMessage(fortunes[Math.floor(Math.random() * fortunes.length)]);
-     else message.channel.sendMessage(message.author.toString() + "can't read that v soz");
+     else message.channel.sendMessage(message.author.toString() + ", I can't read that i'm v soz");
      break;
      case "play":
         if(!args[1]) {

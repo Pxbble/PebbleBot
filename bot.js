@@ -104,8 +104,8 @@ bot.on("message", function(message) {
             server.queue.push(args[1]);
 
             if (message.guild.voiceConnection) message.guild.voiceConnection.disconnect
-                case "help":
-        var embed = new Discord.RichEmbed()
+        case "help":
+            var embed = new Discord.RichEmbed()
                 .addField("<+>------------[- » 𝐏𝐞𝐛𝐁𝐨𝐭 « -]------------<+>")
                 .addField("𝐈𝐧𝐟𝐨 𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬")
                 .addField("» !version")

@@ -107,6 +107,10 @@ bot.on("message", function(message) {
             server.queue.push(args[1]);
 
             if (message.guild.voiceConnection) message.guild.voiceConnection.disconnect
+        case "embed":
+            var embed = new Discord.RichEmbed()
+            .setDescription("Test Embed");
+           message.channel.sendEmbed(embed);
             break;
          default:
          message.channel.sendMessage("That command does not exist! Put that in #command-request and Pebble will try to make it x3");

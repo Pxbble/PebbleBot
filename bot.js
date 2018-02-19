@@ -57,7 +57,7 @@ bot.on("message", function(message) {
       message.channel.sendMessage("```PebBot: Version 1.0.0```")
       break;
       case "creator":
-      message.channel.sendMessage(message.author.toString() +"**This bot has been created by a 12 year old kid named @_Pxbble_#9968**")
+      message.channel.sendMessage(message.author.toString() + "**This bot has been created by a 12 year old kid named @_Pxbble_#9968**")
       break;
       case "bangtankook":
       message.channel.sendMessage("**is a great friend!**")
@@ -67,7 +67,7 @@ bot.on("message", function(message) {
       break;
       case "8ball":
       if (args[1]) message.channel.sendMessage(fortunes[Math.floor(Math.random() * fortunes.length)]);
-     else message.channel.sendMessage(message.author.toString() +"can't read that v soz");
+     else message.channel.sendMessage(message.author.toString() + "can't read that v soz");
      break;
      case "play":
         if(!args[1]) {
@@ -112,7 +112,7 @@ bot.on("message", function(message) {
                 .addField("» !creator")
                 .setColor(bef9fb)
                 .setFooter("Enjoy and don't abuse!")
-            .setDescription("");
+           message.channel.sendEmbed(Commands);
             break;
          default:
          message.channel.sendMessage("That command does not exist! Put that in #command-request and Pebble will try to make it x3");
